@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "cv": "CV",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "available": "Abierto a oportunidades",
+    "description": "Estudiante de Ingeniería en Informática desarrollando microservicios en Mercadolibre y construyendo experiencias web como freelancer.",
+    "downloadCV": "Descargar CV",
+    "viewProjects": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "body": "Soy estudiante de Ingeniería en Informática, actualmente desarrollando microservicios y herramientas de infraestructura en Go y Java en Mercadolibre. Mi perfil combina el rigor técnico de arquitecturas backend de alta escala con una fuerte faceta creativa como desarrollador Full-Stack freelance, especializándome en React y Tailwind CSS. Mi objetivo es incorporarme a roles Full-Stack o Front-end donde pueda aplicar mis habilidades analíticas y mi enfoque en la experiencia del usuario.",
+    "languages": "Idiomas",
+    "education": "Estudios"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de datos",
+    "tools": "Herramientas"
+  },
+  "experience": {
+    "title": "Experiencia"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewLive": "Ver sitio",
+    "viewCode": "Ver código",
+    "inProgress": "En progreso"
+  },
+  "cv": {
+    "title": "Currículum Vitae",
+    "download": "Descargar PDF",
+    "downloadEs": "Download in English"
+  },
+  "analyzer": {
+    "title": "Analizador de match con IA",
+    "subtitle": "Pegá cualquier descripción de trabajo y analizaré qué tan bien encaja Luis con el rol.",
+    "placeholder": "Pegá la descripción del puesto aquí...",
+    "analyze": "Analizar compatibilidad",
+    "analyzing": "Analizando...",
+    "matchScore": "Puntaje de compatibilidad",
+    "strengths": "Puntos fuertes",
+    "gaps": "Posibles brechas",
+    "verdict": "Veredicto",
+    "error": "Algo salió mal. Por favor intentá de nuevo.",
+    "poweredBy": "Desarrollado con Claude AI"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Construyamos algo juntos.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "phone": "Teléfono"
+  },
+  "footer": {
+    "built": "Desarrollado con React y Tailwind CSS",
+    "rights": "Todos los derechos reservados"
+  }
+}

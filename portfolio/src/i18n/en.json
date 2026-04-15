@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "cv": "CV",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "available": "Open to opportunities",
+    "description": "Computer Engineering student building microservices at Mercadolibre and crafting polished web experiences as a freelancer.",
+    "downloadCV": "Download CV",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "body": "I'm a Computer Engineering student currently developing microservices and infrastructure tools in Go and Java at Mercadolibre. My background combines the technical rigor of high-scale backend architectures with a strong creative side as a freelance Full-Stack Developer, specializing in React and Tailwind CSS. My current goal is to move into Full-Stack or Front-end roles, applying my analytical skills and focus on user experience to build end-to-end digital products.",
+    "languages": "Languages",
+    "education": "Education"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewLive": "Live Site",
+    "viewCode": "View Code",
+    "inProgress": "In Progress"
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "download": "Download PDF",
+    "downloadEs": "Descargar en Español"
+  },
+  "analyzer": {
+    "title": "AI Match Analyzer",
+    "subtitle": "Paste any job description and I'll analyze how well Luis matches the role.",
+    "placeholder": "Paste the job description here...",
+    "analyze": "Analyze Match",
+    "analyzing": "Analyzing...",
+    "matchScore": "Match Score",
+    "strengths": "Key Strengths",
+    "gaps": "Potential Gaps",
+    "verdict": "Verdict",
+    "error": "Something went wrong. Please try again.",
+    "poweredBy": "Powered by Claude AI"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's build something great together.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "phone": "Phone"
+  },
+  "footer": {
+    "built": "Built with React & Tailwind CSS",
+    "rights": "All rights reserved"
+  }
+}
