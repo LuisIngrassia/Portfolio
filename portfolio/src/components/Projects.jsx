@@ -161,7 +161,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        {/* Bento grid — large + 2 medium */}
+        {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ProjectCard
             project={currentProjects[0]}
@@ -170,20 +170,19 @@ export default function Projects() {
           />
           <ProjectCard project={currentProjects[1]} delay={0.2} />
           <ProjectCard project={currentProjects[2]} delay={0.3} />
-        </div>
+          <ProjectCard project={currentProjects[3]} delay={0.4} />
 
-        {/* More coming soon */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-4"
-        >
-          <div className="glass rounded-2xl p-6 border border-dashed border-white/10 flex flex-col items-center justify-center text-center gap-2 min-h-32">
+          {/* More coming soon — same size as the cards beside it */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="glass rounded-2xl p-6 border border-dashed border-white/10 flex flex-col items-center justify-center text-center gap-2"
+          >
             <p className="text-white/30 text-sm">More projects coming soon...</p>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

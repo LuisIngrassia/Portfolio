@@ -91,7 +91,7 @@ export const projects = {
       id: 1,
       name: 'CrecivAI',
       description: 'Full-stack financial analysis application with AI for portfolio evaluation, technical decision-making, and real-time data visualization. Developed with scalable architecture and modern design.',
-      tags: ['React', 'Vite', 'Node.js'],
+      tags: ['React', 'Vite', 'Node.js', 'AI', 'PostgreSQL'],
       link: "https://crecivai.com/landing",
       github: null,
       size: 'large',
@@ -117,13 +117,23 @@ export const projects = {
       size: 'medium',
       inProgress: false,
     },
+    {
+      id: 4,
+      name: "Neumaticos Lisandro",
+      description: "Website for a tire shop. Developed with a focus on user experience, featuring a clean design and intuitive navigation to information and contact details to potential clients.",
+      tags: ['React', 'Tailwind CSS', 'UX/UI', 'Freelance'],
+      link: 'https://neumaticoslisandro.com.ar/',
+      github: null,
+      size: 'medium',
+      inProgress: false,
+    }
   ],
   es: [
     {
       id: 1,
       name: 'CrecivAI',
       description: 'Aplicación full-stack de análisis financiero con IA para evaluación de portafolios, decisiones técnicas y visualización de datos en tiempo real. Desarrollada con arquitectura escalable y diseño moderno.',
-      tags: ['React', 'Vite', 'Node.js'],
+      tags: ['React', 'Vite', 'Node.js', 'AI', 'PostgreSQL'],
       link: "https://crecivai.com/landing",
       github: null,
       size: 'large',
@@ -149,6 +159,16 @@ export const projects = {
       size: 'small',
       inProgress: false,
     },
+    {
+      id: 4,
+      name: "Neumaticos Lisandro",
+      description: "Sitio web para una gomeria. Desarrollado con foco en experiencia de usuario, con diseño limpio y navegación intuitiva para información y contacto a potenciales clientes.",
+      tags: ['React', 'Tailwind CSS', 'UX/UI', 'Freelance'],
+      link: 'https://neumaticoslisandro.com.ar/',
+      github: null,
+      size: 'small',
+      inProgress: false,
+    }
   ],
 }
 
