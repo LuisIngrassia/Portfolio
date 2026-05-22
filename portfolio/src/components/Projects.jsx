@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { projects } from '../data'
@@ -18,6 +19,53 @@ function GitHubIcon() {
   )
 }
 
+function PreviewFrame({ url, name }) {
+  const [loaded, setLoaded] = useState(false)
+
+  if (!url) return null
+
+  return (
+    <div className="mb-5 rounded-xl overflow-hidden border border-white/10 group-hover:border-purple-500/20 transition-colors">
+      {/* Browser chrome */}
+      <div className="flex items-center gap-1.5 px-3 py-2 bg-white/[0.04] border-b border-white/10">
+        <div className="w-2 h-2 rounded-full bg-red-500/50" />
+        <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
+        <div className="w-2 h-2 rounded-full bg-green-500/50" />
+        <span className="ml-2 text-white/20 text-[10px] truncate flex-1 font-mono">
+          {url.replace(/^https?:\/\//, '')}
+        </span>
+      </div>
+      {/* iframe container — scaled to 35% to fit more of the page */}
+      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-purple-950/20 to-blue-950/20">
+        <iframe
+          src={url}
+          title={name}
+          loading="lazy"
+          tabIndex={-1}
+          aria-hidden="true"
+          className="absolute top-0 left-0 pointer-events-none"
+          style={{
+            width: '285%',
+            height: '285%',
+            transform: 'scale(0.35)',
+            transformOrigin: 'top left',
+            opacity: loaded ? 0.75 : 0,
+            transition: 'opacity 0.6s ease',
+          }}
+          onLoad={() => setLoaded(true)}
+        />
+        {!loaded && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-5 h-5 rounded-full border-2 border-purple-500/30 border-t-purple-400 animate-spin" />
+          </div>
+        )}
+        {/* subtle gradient at bottom so it blends into the card */}
+        <div className="absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+      </div>
+    </div>
+  )
+}
+
 function ProjectCard({ project, className = '', delay = 0 }) {
   const { t } = useTranslation()
 
@@ -30,6 +78,9 @@ function ProjectCard({ project, className = '', delay = 0 }) {
       whileHover={{ y: -4 }}
       className={`glass rounded-2xl p-6 border border-white/10 hover:border-purple-500/30 transition-all group flex flex-col ${className}`}
     >
+      {/* Preview */}
+      <PreviewFrame url={project.link} name={project.name} />
+
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
