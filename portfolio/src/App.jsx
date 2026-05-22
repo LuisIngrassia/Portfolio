@@ -5,7 +5,6 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import CVSection from './components/CVSection'
-import AIAnalyzer from './components/AIAnalyzer'
 import Contact from './components/Contact'
 import { useTranslation } from 'react-i18next'
 
@@ -14,7 +13,7 @@ function Footer() {
   return (
     <footer className="py-8 px-6 border-t border-white/5 text-center">
       <p className="text-white/20 text-sm">
-        © {new Date().getFullYear()} Luis Pedro Ingrassia — {t('footer.built')}
+        © {new Date().getFullYear()} Luis Pedro Ingrassia — {t('footer.rights')}
       </p>
     </footer>
   )
@@ -39,7 +38,6 @@ export default function App() {
         <Experience />
         <Projects />
         <CVSection />
-        <AIAnalyzer />
         <Contact />
       </main>
 

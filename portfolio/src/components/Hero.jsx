@@ -73,7 +73,7 @@ export default function Hero() {
         <motion.div {...fadeUp(0.4)} className="flex items-center justify-center gap-3 mb-6">
           <div className="h-px w-12 bg-gradient-to-r from-transparent to-purple-500" />
           <p className="text-white/70 text-xl font-medium tracking-widest uppercase text-sm">
-            {t('hero.role')}
+            Software Developer
           </p>
           <div className="h-px w-12 bg-gradient-to-l from-transparent to-purple-500" />
         </motion.div>

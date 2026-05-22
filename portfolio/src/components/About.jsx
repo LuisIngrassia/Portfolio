@@ -16,7 +16,8 @@ const langLevels = {
 }
 
 export default function About() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const currentLang = i18n.language === 'en' ? 'en' : 'es'
 
   return (
     <section id="about" className="py-28 px-6">
@@ -58,7 +59,7 @@ export default function About() {
               {t('about.languages')}
             </p>
             <div className="flex flex-col gap-4">
-              {languages.map((lang) => (
+              {languages[currentLang].map((lang) => (
                 <div key={lang.name}>
                   <div className="flex justify-between items-center mb-1.5">
                     <span className="text-white/80 text-sm font-medium">{lang.name}</span>
@@ -88,7 +89,7 @@ export default function About() {
               {t('about.education')}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {education.map((edu, i) => (
+              {education[currentLang].map((edu, i) => (
                 <div
                   key={i}
                   className="flex flex-col gap-1 p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-purple-500/30 transition-colors"

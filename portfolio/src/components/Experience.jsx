@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { experience } from '../data'
 
 export default function Experience() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const currentLang = i18n.language === 'en' ? 'en' : 'es'
 
   return (
     <section id="experience" className="py-28 px-6">
@@ -28,7 +29,7 @@ export default function Experience() {
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-purple-600/50 via-blue-600/30 to-transparent" />
 
           <div className="flex flex-col gap-12">
-            {experience.map((exp, i) => (
+            {experience[currentLang].map((exp, i) => (
               <motion.div
                 key={exp.id}
                 initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}

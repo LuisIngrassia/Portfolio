@@ -14,6 +14,7 @@ export default function CVSection() {
   const cvEn = personalInfo.cvEnglish
   const cvEs = personalInfo.cvSpanish
   const isEn = i18n.language === 'en'
+  const currentLang = isEn ? 'en' : 'es'
 
   return (
     <section id="cv" className="py-28 px-6">
@@ -101,7 +102,7 @@ export default function CVSection() {
                   {t('about.languages')}
                 </h3>
                 <div className="flex flex-col gap-2">
-                  {languages.map((lang) => (
+                  {languages[currentLang].map((lang) => (
                     <div key={lang.name} className="flex justify-between text-sm">
                       <span className="text-white/70">{lang.name}</span>
                       <span className="text-white/40">{lang.level}</span>
@@ -116,7 +117,7 @@ export default function CVSection() {
                   {t('about.education')}
                 </h3>
                 <div className="flex flex-col gap-3">
-                  {education.map((edu, i) => (
+                  {education[currentLang].map((edu, i) => (
                     <div key={i}>
                       <p className="text-white/70 text-xs font-medium leading-snug">{edu.degree}</p>
                       <p className="text-purple-400 text-xs">{edu.institution}</p>
@@ -134,7 +135,7 @@ export default function CVSection() {
                   {t('experience.title')}
                 </h3>
                 <div className="flex flex-col gap-6">
-                  {experience.map((exp) => (
+                  {experience[currentLang].map((exp) => (
                     <div key={exp.id}>
                       <div className="flex items-baseline justify-between mb-1">
                         <div>

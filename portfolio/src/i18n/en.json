@@ -10,7 +10,7 @@
   "hero": {
     "greeting": "Hi, I'm",
     "available": "Open to opportunities",
-    "description": "Computer Engineering student building microservices at Mercadolibre and crafting polished web experiences as a freelancer.",
+    "description": "Computer Engineering student and former Mercado Libre Backend Developer, currently crafting polished web experiences as a freelancer",
     "downloadCV": "Download CV",
     "viewProjects": "View Projects"
   },
@@ -41,19 +41,6 @@
     "download": "Download PDF",
     "downloadEs": "Descargar en Español"
   },
-  "analyzer": {
-    "title": "AI Match Analyzer",
-    "subtitle": "Paste any job description and I'll analyze how well Luis matches the role.",
-    "placeholder": "Paste the job description here...",
-    "analyze": "Analyze Match",
-    "analyzing": "Analyzing...",
-    "matchScore": "Match Score",
-    "strengths": "Key Strengths",
-    "gaps": "Potential Gaps",
-    "verdict": "Verdict",
-    "error": "Something went wrong. Please try again.",
-    "poweredBy": "Powered by Claude AI"
-  },
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Let's build something great together.",
@@ -62,7 +49,6 @@
     "phone": "Phone"
   },
   "footer": {
-    "built": "Built with React & Tailwind CSS",
     "rights": "All rights reserved"
   }
 }

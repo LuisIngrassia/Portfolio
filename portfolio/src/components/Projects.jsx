@@ -89,7 +89,9 @@ function ProjectCard({ project, className = '', delay = 0 }) {
 }
 
 export default function Projects() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const currentLang = i18n.language === 'en' ? 'en' : 'es'
+  const currentProjects = projects[currentLang]
 
   return (
     <section id="projects" className="py-28 px-6">
@@ -110,15 +112,13 @@ export default function Projects() {
 
         {/* Bento grid — large + 2 medium */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Staff Modern — full width (large) */}
           <ProjectCard
-            project={projects[0]}
+            project={currentProjects[0]}
             className="md:col-span-2"
             delay={0.1}
           />
-          {/* Franco Cuatto + Corralito side by side */}
-          <ProjectCard project={projects[1]} delay={0.2} />
-          <ProjectCard project={projects[2]} delay={0.3} />
+          <ProjectCard project={currentProjects[1]} delay={0.2} />
+          <ProjectCard project={currentProjects[2]} delay={0.3} />
         </div>
 
         {/* More coming soon */}
@@ -130,7 +130,6 @@ export default function Projects() {
           className="mt-4"
         >
           <div className="glass rounded-2xl p-6 border border-dashed border-white/10 flex flex-col items-center justify-center text-center gap-2 min-h-32">
-            <span className="text-2xl">🚀</span>
             <p className="text-white/30 text-sm">More projects coming soon...</p>
           </div>
         </motion.div>
